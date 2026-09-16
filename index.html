@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/code.js" defer></script>
+  </head>
+  <body>
+    <div class="primeraConfiguracion">
+      <label for="intentos">Intentos:</label>
+      <br />
+
+      <select name="numeroIntentos" id="intentos">
+        <option value="dosIntentos">2</option>
+        <option value="tresIntentos">3</option>
+        <option value="cuatroIntentos">4</option>
+        <option value="cincoIntentos">5</option>
+        <option value="seisIntentos">6</option>
+        <option value="sieteIntentos">7</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="letras">Numero de letras:</label>
+      <br />
+
+      <select name="numeroLetras" id="letras">
+        <option value="tresLetras">3</option>
+        <option value="cuatroLetras">4</option>
+        <option value="cincoLetras">5</option>
+        <option value="seisLetras">6</option>
+        <option value="sieteLetras">7</option>
+        <option value="ochoLetras">8</option>
+        <option value="nueveLetras">9</option>
+      </select>
+      <br />
+      <br />
+
+      <button class="botonJugar">Jugar</button>
+    </div>
+
+    <div class="tecladoVirtual oculto">
+        <div class="fila fila-tildes">
+            <button id="Á" class="tecla">Á</button>
+            <button id="É" class="tecla">É</button>
+            <button id="Í" class="tecla">Í</button>
+            <button id="Ó" class="tecla">Ó</button>
+            <button id="Ú" class="tecla">Ú</button>
+        </div>
+
+        <div class="fila">
+            <button id="Q" class="tecla">Q</button>
+            <button id="W" class="tecla">W</button>
+            <button id="E" class="tecla">E</button>
+            <button id="R" class="tecla">R</button>
+            <button id="T" class="tecla">T</button>
+            <button id="Y" class="tecla">Y</button>
+            <button id="U" class="tecla">U</button>
+            <button id="I" class="tecla">I</button>
+            <button id="O" class="tecla">O</button>
+            <button id="P" class="tecla">P</button>
+        </div>
+
+        <div class="fila">
+            <button id="A" class="tecla">A</button>
+            <button id="S" class="tecla">S</button>
+            <button id="D" class="tecla">D</button>
+            <button id="F" class="tecla">F</button>
+            <button id="G" class="tecla">G</button>
+            <button id="H" class="tecla">H</button>
+            <button id="J" class="tecla">J</button>
+            <button id="K" class="tecla">K</button>
+            <button id="L" class="tecla">L</button>
+            <button id="Ñ" class="tecla">Ñ</button>
+        </div>
+
+        <div class="fila fila-inferior">
+            <button id="ENTER" class="tecla">ENTER</button>
+            <button id="Z" class="tecla">Z</button>
+            <button id="X" class="tecla">X</button>
+            <button id="C" class="tecla">C</button>
+            <button id="V" class="tecla">V</button>
+            <button id="B" class="tecla">B</button>
+            <button id="N" class="tecla">N</button>
+            <button id="M" class="tecla">M</button>
+            <button id="DEL" class="tecla">DEL</button>
+        </div>
+    </div>
+
+</html>
