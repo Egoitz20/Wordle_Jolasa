@@ -23,7 +23,23 @@
   height: 43px;
   border: none;
   cursor: pointer;
+
+  /* Cuando pasa el cursor sobre la tecla hace que tenga esta suave transicion */
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
+
+.botonJugar:hover {
+  transform: scale(1.1);
+}
+
+.botonJugar:active {
+  transform: scale(0.95);
+}
+/* ************************************************************************************* */
+/* ___________________________________ESTILOS PARA EL TECLADO VIRTUAL___________________ */
+/* ************************************************************************************* */
 
 .tecladoVirtual {
   display: flex;
@@ -58,8 +74,104 @@
   font-size: 24px;
   height: 60px;
   border-radius: 8px;
+
+  /* Cuando pasa el cursor sobre la tecla hace que tenga esta suave transicion */
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
 }
+
+/* Interacción del boton cuando pasa por encima el ratón */
+.tecla:hover {
+  background-color: #3b82f6;
+  color: #fff;
+
+  /* Amplia el botón*/
+  transform: scale(1.1);
+}
+
+/* Interacción del boton cuando el ratón pulsa sobre el*/
+.tecla:active {
+  /* Encoje el botón*/
+  transform: scale(0.95);
+}
+
+/* ************************************************************************************* */
+/* ___________________________________ESTILOS PARA OCULTAR ELEMENTOS____________________ */
+/* ************************************************************************************* */
 
 .oculto {
   display: none;
+}
+/* ************************************************************************************* */
+/* ___________________________________ESTILOS PARA LAS CAJAS____________________________ */
+/* ************************************************************************************* */
+.cajaPalabra {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.caja {
+  width: 108px;
+  aspect-ratio: 1;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  margin: 5px;
+}
+
+.recuadro {
+  text-align: center;
+  margin-right: -300px;
+  margin-left: -300px;
+}
+
+/* ************************************************************************************* */
+/* ___________________________________ESTILO PARA REINICIAR_____________________________ */
+/* ************************************************************************************* */
+
+.botonReiniciar {
+  background-color: #0070f8;
+  font-size: 24px;
+  color: white;
+  border-radius: 8px;
+  width: 12%;
+  height: 43px;
+  border: none;
+  cursor: pointer;
+
+  /* Cuando pasa el cursor sobre la tecla hace que tenga esta suave transicion */
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.botonReiniciar:hover {
+  transform: scale(1.1);
+}
+
+.botonReiniciar:active {
+  transform: scale(0.95);
+}
+
+.reinicio {
+  text-align: center;
+}
+
+.reinicio > p {
+  font-size: 34px;
 }
