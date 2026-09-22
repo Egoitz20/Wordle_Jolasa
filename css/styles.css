@@ -97,13 +97,6 @@
 }
 
 /* ************************************************************************************* */
-/* ___________________________________ESTILOS PARA OCULTAR ELEMENTOS____________________ */
-/* ************************************************************************************* */
-
-.oculto {
-  display: none;
-}
-/* ************************************************************************************* */
 /* ___________________________________ESTILOS PARA LAS CAJAS____________________________ */
 /* ************************************************************************************* */
 .cajaPalabra {
@@ -153,6 +146,7 @@
   height: 43px;
   border: none;
   cursor: pointer;
+  margin-bottom: 10px;
 
   /* Cuando pasa el cursor sobre la tecla hace que tenga esta suave transicion */
   transition:
@@ -174,4 +168,97 @@
 
 .reinicio > p {
   font-size: 34px;
+}
+
+/* ************************************************************************************* */
+/* ___________________________________ESTILO DEL RECUADRO_______________________________ */
+/* ************************************************************************************* */
+
+.caja.correcta {
+  background-color: #6aaa64; /* Verde */
+  color: white;
+  border-color: #6aaa64;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.caja.presente {
+  background-color: #c9b458; /* Amarillo */
+  color: white;
+  border-color: #c9b458;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.caja.ausente {
+  background-color: #787c7e; /* Gris */
+  color: white;
+  border-color: #787c7e;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* ************************************************************************************* */
+/* ___________________________________ESTILO PARA HISTORIAL_____________________________ */
+/* ************************************************************************************* */
+
+.botonVerHistorial {
+  background-color: #0070f8;
+  font-size: 24px;
+  color: white;
+  border-radius: 8px;
+  width: 12%;
+  height: 43px;
+  border: none;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.botonVerHistorial:hover {
+  transform: scale(1.1);
+}
+
+.botonVerHistorial:active {
+  transform: scale(0.95);
+}
+
+.botonCerrarHistorial {
+  background-color: #0070f8;
+  font-size: 24px;
+  color: white;
+  border-radius: 8px;
+  width: 12%;
+  height: 43px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.botonCerrarHistorial:hover {
+  transform: scale(1.1);
+}
+
+.botonCerrarHistorial:active {
+  transform: scale(0.95);
+}
+
+/* ************************************************************************************* */
+/* ___________________________________ESTILOS PARA OCULTAR ELEMENTOS____________________ */
+/* ************************************************************************************* */
+
+.oculto {
+  display: none;
 }
